@@ -54,14 +54,14 @@
             this.txtConnStr.Multiline = true;
             this.txtConnStr.Name = "txtConnStr";
             this.txtConnStr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConnStr.Size = new System.Drawing.Size(578, 125);
+            this.txtConnStr.Size = new System.Drawing.Size(542, 125);
             this.txtConnStr.TabIndex = 1;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.LightGreen;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSave.Location = new System.Drawing.Point(330, 335);
+            this.btnSave.Location = new System.Drawing.Point(294, 332);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(147, 46);
             this.btnSave.TabIndex = 2;
@@ -83,12 +83,12 @@
             this.txtFolder.Location = new System.Drawing.Point(52, 284);
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.ReadOnly = true;
-            this.txtFolder.Size = new System.Drawing.Size(462, 30);
+            this.txtFolder.Size = new System.Drawing.Size(438, 30);
             this.txtFolder.TabIndex = 3;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(532, 284);
+            this.btnBrowse.Location = new System.Drawing.Point(496, 283);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(98, 30);
             this.btnBrowse.TabIndex = 2;
@@ -98,7 +98,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(483, 335);
+            this.btnThoat.Location = new System.Drawing.Point(447, 332);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(147, 46);
             this.btnThoat.TabIndex = 2;
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 423);
+            this.ClientSize = new System.Drawing.Size(637, 414);
             this.Controls.Add(this.lblGoiY);
             this.Controls.Add(this.txtFolder);
             this.Controls.Add(this.btnBrowse);
