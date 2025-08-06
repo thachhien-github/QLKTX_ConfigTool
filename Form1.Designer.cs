@@ -36,12 +36,13 @@
             this.txtFolder = new System.Windows.Forms.TextBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.lblGoiY = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(47, 31);
+            this.lblInfo.Location = new System.Drawing.Point(48, 34);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(116, 23);
             this.lblInfo.TabIndex = 0;
@@ -49,18 +50,18 @@
             // 
             // txtConnStr
             // 
-            this.txtConnStr.Location = new System.Drawing.Point(45, 57);
+            this.txtConnStr.Location = new System.Drawing.Point(52, 60);
             this.txtConnStr.Multiline = true;
             this.txtConnStr.Name = "txtConnStr";
             this.txtConnStr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConnStr.Size = new System.Drawing.Size(321, 75);
+            this.txtConnStr.Size = new System.Drawing.Size(578, 125);
             this.txtConnStr.TabIndex = 1;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.LightGreen;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSave.Location = new System.Drawing.Point(45, 211);
+            this.btnSave.Location = new System.Drawing.Point(330, 335);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(147, 46);
             this.btnSave.TabIndex = 2;
@@ -71,7 +72,7 @@
             // lblFolder
             // 
             this.lblFolder.AutoSize = true;
-            this.lblFolder.Location = new System.Drawing.Point(47, 135);
+            this.lblFolder.Location = new System.Drawing.Point(48, 258);
             this.lblFolder.Name = "lblFolder";
             this.lblFolder.Size = new System.Drawing.Size(110, 23);
             this.lblFolder.TabIndex = 0;
@@ -79,15 +80,15 @@
             // 
             // txtFolder
             // 
-            this.txtFolder.Location = new System.Drawing.Point(45, 161);
+            this.txtFolder.Location = new System.Drawing.Point(52, 284);
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.ReadOnly = true;
-            this.txtFolder.Size = new System.Drawing.Size(214, 30);
+            this.txtFolder.Size = new System.Drawing.Size(462, 30);
             this.txtFolder.TabIndex = 3;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(268, 161);
+            this.btnBrowse.Location = new System.Drawing.Point(532, 284);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(98, 30);
             this.btnBrowse.TabIndex = 2;
@@ -97,7 +98,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(198, 211);
+            this.btnThoat.Location = new System.Drawing.Point(483, 335);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(147, 46);
             this.btnThoat.TabIndex = 2;
@@ -105,11 +106,21 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // lblGoiY
+            // 
+            this.lblGoiY.AutoSize = true;
+            this.lblGoiY.Location = new System.Drawing.Point(48, 188);
+            this.lblGoiY.Name = "lblGoiY";
+            this.lblGoiY.Size = new System.Drawing.Size(55, 23);
+            this.lblGoiY.TabIndex = 4;
+            this.lblGoiY.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 298);
+            this.ClientSize = new System.Drawing.Size(682, 423);
+            this.Controls.Add(this.lblGoiY);
             this.Controls.Add(this.txtFolder);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.btnThoat);
@@ -121,6 +132,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(700, 470);
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -139,6 +151,7 @@
         private System.Windows.Forms.TextBox txtFolder;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Label lblGoiY;
     }
 }
 

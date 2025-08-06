@@ -16,7 +16,23 @@ namespace QLKTX_ConfigTool
         public Form1()
         {
             InitializeComponent();
-            this.Text = "Cấu hình kết nối - QLKTX"; // Tiêu đề
+            this.Text = "Cấu hình kết nối - QLKTX";
+            LoadDefaultConnectionString();
+
+            lblGoiY.Text = "📌 Gợi ý:\n- <TEN_SERVER> = tên SQL Server bạn đang dùng\n  (ví dụ: . hoặc localhost hoặc TENSERVER\\SQLEXPRESS)";
+        }
+
+        private void LoadDefaultConnectionString()
+        {
+            txtConnStr.Text =
+                "metadata=res://*/TestModel.csdl|res://*/TestModel.ssdl|res://*/TestModel.msl;" +
+                "provider=System.Data.SqlClient;" +
+                "provider connection string=\"data source=<TEN_SERVER>;" +
+                "initial catalog=KTX_Database;" +
+                "integrated security=True;" +
+                "TrustServerCertificate=True;" +
+                "MultipleActiveResultSets=True;" +
+                "App=EntityFramework\"";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -40,7 +56,6 @@ namespace QLKTX_ConfigTool
             {
                 string filePath = Path.Combine(folder, "config.txt");
                 File.WriteAllText(filePath, connStr);
-
                 MessageBox.Show($"Đã lưu cấu hình thành công!\n{filePath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
